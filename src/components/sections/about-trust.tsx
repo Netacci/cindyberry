@@ -2,28 +2,28 @@ import { Reveal } from "@/components/reveal";
 
 export function AboutTrust() {
   return (
-    <section id="about" className="relative overflow-hidden px-6 py-20 md:px-10 md:py-28">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(209,168,84,0.16),transparent_40%)]" />
+    <section id="about" className="relative overflow-hidden bg-[#faf9f5] px-6 py-20 md:px-10 md:py-28">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(209,168,84,0.08),transparent_40%)]" />
 
       <div className="relative mx-auto grid w-full max-w-7xl gap-10 md:grid-cols-2">
         <Reveal className="space-y-6">
-          <p className="text-xs tracking-[0.28em] text-[#f0ca7c] uppercase">
+          <p className="text-xs tracking-[0.28em] text-[#a07730] uppercase">
             Trust & Reach
           </p>
-          <h2 className="font-display text-3xl font-semibold leading-tight text-white md:text-5xl">
+          <h2 className="font-display text-3xl font-semibold leading-tight text-[#0c0c0c] md:text-5xl">
             Reliable sourcing from China, scaled globally.
           </h2>
-          <p className="max-w-xl leading-relaxed text-white/72">
+          <p className="max-w-xl leading-relaxed text-[#4a4a4a]">
             We work close to the supply side in Guangzhou and move fast on your
             behalf. You get vetted suppliers, transparent progress, and a team
             that treats your timeline like it matters.
           </p>
-          <p className="max-w-lg text-sm tracking-[0.18em] text-white/55 uppercase">
+          <p className="max-w-lg text-sm tracking-[0.18em] text-black/45 uppercase">
             Global reach. Local factory access. Consistent execution.
           </p>
         </Reveal>
 
-        <Reveal delayMs={120} className="relative min-h-[280px] rounded-2xl border border-white/10 bg-black/30 p-6 md:min-h-[340px]">
+        <Reveal delayMs={120} className="relative min-h-[280px] rounded-2xl border border-black/10 bg-[#0c0c0c] p-6 md:min-h-[340px]">
           <svg
             viewBox="0 0 500 340"
             className="h-full w-full"

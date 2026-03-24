@@ -122,6 +122,27 @@ html {
   transform: translateY(-2px);
 }
 
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: transparent;
+  color: #0c0c0c;
+  font-weight: 500;
+  transition: border-color 180ms ease, background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.btn-dark:hover {
+  border-color: rgba(0, 0, 0, 0.38);
+  background: rgba(0, 0, 0, 0.04);
+  transform: translateY(-2px);
+}
+
 .btn-contact {
   display: inline-flex;
   align-items: center;
