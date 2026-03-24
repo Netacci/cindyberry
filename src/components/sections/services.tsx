@@ -17,13 +17,13 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="bg-[#faf9f5] px-6 py-16 md:px-10 md:py-28">
+    <section id="services" className="px-6 py-16 md:px-10 md:py-28">
       <div className="mx-auto w-full max-w-7xl">
         <Reveal className="mb-12">
-          <p className="mb-3 text-xs tracking-[0.28em] text-[#a07730] uppercase">
+          <p className="mb-3 text-xs tracking-[0.28em] text-[#f0ca7c] uppercase">
             Services
           </p>
-          <h2 className="font-display max-w-2xl text-2xl font-semibold leading-tight text-[#0c0c0c] sm:text-3xl md:text-5xl">
+          <h2 className="font-display max-w-2xl text-2xl font-semibold leading-tight text-white sm:text-3xl md:text-5xl">
             Built for serious trade, not checkbox logistics.
           </h2>
         </Reveal>
@@ -33,7 +33,7 @@ export function Services() {
             <Reveal
               key={service.title}
               delayMs={index * 120}
-              className={`group relative overflow-hidden rounded-2xl border border-black/10 bg-white p-6 shadow-sm transition-all hover:border-[#d1a854]/60 hover:shadow-[0_4px_24px_rgba(0,0,0,0.07)] sm:p-8 ${
+              className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8 transition-colors hover:border-[#d1a854]/40 ${
                 index === 0
                   ? "md:col-span-5"
                   : index === 1
@@ -41,14 +41,14 @@ export function Services() {
                     : "md:col-span-3"
               }`}
             >
-              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#d1a854]/70 to-transparent" />
-              <p className="mb-7 text-sm tracking-[0.2em] text-black/30 uppercase">
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#d1a854]/80 to-transparent opacity-80" />
+              <p className="mb-7 text-sm tracking-[0.2em] text-white/45 uppercase">
                 0{index + 1}
               </p>
-              <h3 className="mb-4 text-2xl leading-tight font-medium text-[#0c0c0c] sm:text-3xl">
+              <h3 className="mb-4 text-2xl leading-tight font-medium text-white sm:text-3xl">
                 {service.title}
               </h3>
-              <p className="max-w-sm leading-relaxed text-[#4a4a4a]">{service.text}</p>
+              <p className="max-w-sm leading-relaxed text-white/70">{service.text}</p>
             </Reveal>
           ))}
         </div>
